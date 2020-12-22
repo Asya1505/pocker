@@ -1,6 +1,7 @@
 java version "15.0.1"
 
-Implemented only for texas-holdem
+Implemented only for texas-holdem  
+no data validation (
 
 **_build_**
 
