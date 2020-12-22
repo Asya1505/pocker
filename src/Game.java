@@ -10,15 +10,15 @@ public class Game {
     public static char [] RANKS= new char[]{'A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2'};
 
 
-//    public Game(String cards) {
-//
-//        String[] subStr = cards.split(" ");
-//        mainHand = new Hand(subStr[1]);
-//
-//        for(int i = 2; i < subStr.length; i++) {
-//            playersHand.add(new Hand(subStr[i]));
-//        }
-//    }
+    public Game(String cards) {
+
+        String[] subStr = cards.split(" ");
+        mainHand = new Hand(subStr[1]);
+
+        for(int i = 2; i < subStr.length; i++) {
+            playersHand.add(new Hand(subStr[i]));
+        }
+    }
 
     public void repeats(Hand hand){
 
