@@ -1,17 +1,15 @@
-java version "15.0.1"
-
 Implemented only for texas-holdem  
 no data validation (
 
 **_build_**
 
-javac -sourcepath src -d build src/*.java
+`prepare.sh shell`
 
 **_run_**
 
-java -classpath build Pocker <fileName>
+`run.sh < test-cases.txt > solutions.txt`
 
 **_example_**
 
-java -classpath build Pocker games.txt
+`run.sh games.txt solutions.txt`
 
