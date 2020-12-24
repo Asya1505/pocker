@@ -11,12 +11,13 @@ public class Game {
 
 
     public Game(String cards) {
-
         String[] subStr = cards.split(" ");
-        mainHand = new Hand(subStr[1]);
+        if(subStr[0].equals("texas-holdem")) {
+            mainHand = new Hand(subStr[1]);
 
-        for(int i = 2; i < subStr.length; i++) {
-            playersHand.add(new Hand(subStr[i]));
+            for (int i = 2; i < subStr.length; i++) {
+                playersHand.add(new Hand(subStr[i]));
+            }
         }
     }
 
